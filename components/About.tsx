@@ -37,7 +37,7 @@ export const About: React.FC<AboutProps> = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 lg:gap-12 md:items-stretch">
           <AnimateOnScroll>
             {/* Left Column: Text Content */}
-              <div className="w-full md:w-[900px] bg-slate-800/70 backdrop-blur-md rounded-xl shadow-2xl p-9 sm:p-8 md:p-10 space-y-9 h-full flex flex-col">
+              <div className="w-full bg-slate-800/70 backdrop-blur-md rounded-xl shadow-2xl p-9 sm:p-8 md:p-10 space-y-9 h-full flex flex-col">
               <p className="text-lg sm:text-xl text-slate-300 leading-relaxed">
                 Greetings! I am a proactive and ambitious <strong className="text-sky-400 font-semibold">aspiring Software Developer</strong>, bringing a solid <strong className="text-sky-400 font-semibold">1.6 years of professional experience as a QA Engineer</strong>. My journey in the tech world is fueled by a profound passion for engineering high-quality, efficient, and impactful software solutions.
               </p>
