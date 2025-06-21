@@ -64,19 +64,6 @@ export const About: React.FC<AboutProps> = () => {
               </div>
             </div>
           </AnimateOnScroll>
-
-          {/* Right Column: Image */}
-          <AnimateOnScroll delayClass="delay-200">
-            <div className="h-full flex items-center justify-end md:py-4 py-4 pr-6 md:pr-15">
-              <div className="w-[380px] h-auto">
-                <img 
-                  src="./components/myphoto.png" 
-                  alt="Priyanshu Raj - Profile Photo" 
-                  className="w-full h-full object-cover rounded-xl shadow-2xl" 
-                />
-              </div>
-            </div>
-          </AnimateOnScroll>
         </div>
       </Section>
     </div>
