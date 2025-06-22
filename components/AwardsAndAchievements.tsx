@@ -52,7 +52,7 @@ export const AwardsAndAchievements: React.FC<AwardsAndAchievementsProps> = ({ aw
                 <TrophyIcon className="w-7 h-7 mr-3" /> Awards & Scholarships
               </h3>
               <ul className="space-y-4">
-                {awards.map((award, index) => (
+                {awards.map((award: Award, index: number) => (
                   <AnimateOnScroll key={`award-${index}`} delayClass={getDelayClass(index)}>
                     <li className="flex items-start p-4 bg-slate-800/50 rounded-lg shadow-md">
                       <SparklesIcon className="w-5 h-5 text-yellow-400 mr-3 mt-1 flex-shrink-0" />
@@ -69,7 +69,7 @@ export const AwardsAndAchievements: React.FC<AwardsAndAchievementsProps> = ({ aw
                 <SparklesIcon className="w-7 h-7 mr-3" /> Key Achievements
               </h3>
               <ul className="space-y-4">
-                {achievements.map((achievement, index) => (
+                {achievements.map((achievement: string, index: number) => (
                   <AnimateOnScroll key={`achievement-${index}`} delayClass={getDelayClass(index)}>
                     <li className="flex items-start p-4 bg-slate-800/50 rounded-lg shadow-md">
                       <SparklesIcon className="w-5 h-5 text-green-400 mr-3 mt-1 flex-shrink-0" />

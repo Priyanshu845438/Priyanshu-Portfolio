@@ -46,23 +46,14 @@
   }
 }
 </script>
+  <!-- Include Babel Standalone -->
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 <link rel="stylesheet" href="/index.css">
 </head>
 <body class="bg-slate-900 text-slate-200 antialiased">
   <div id="root"></div>
-  <!-- 
-    IMPORTANT FOR DEPLOYMENT:
-    The src attribute now points to "./index.js".
-    You MUST transpile your TypeScript/TSX files (index.tsx, App.tsx, all components in ./components/)
-    into JavaScript files. For example, index.tsx should become index.js, 
-    components/About.tsx should become components/About.js, and so on.
-    These JavaScript files should be placed in the same directory structure.
-    You can use a tool like 'tsc' (the TypeScript compiler) or an online transpiler.
-    Example command using tsc (if TypeScript is installed globally or as a dev dependency):
-    tsc --jsx react-jsx --module esnext --outDir ./dist (or your preferred output directory)
-    Then, copy the contents of 'dist' to your GitHub Pages deployment folder.
-  -->
-  <script type="module" src="./index.js"></script>
+  <!-- Update script tag for index.tsx to use Babel -->
+  <script type="text/babel" data-presets="env,react,typescript" data-type="module" src="/index.tsx"></script>
 <script type="module" src="/index.tsx"></script>
 </body>
 </html>

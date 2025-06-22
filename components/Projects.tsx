@@ -34,7 +34,7 @@ const ProjectCard: React.FC<{ project: Project; onSelect: () => void }> = ({ pro
         <div className="mt-auto">
           <h4 className="text-xs font-semibold text-slate-300 mb-1">Technologies:</h4>
           <div className="flex flex-wrap gap-1.5">
-            {project.technologies.slice(0, 4).map(tech => ( 
+            {project.technologies.slice(0, 4).map((tech: string) => ( 
               <span key={tech} className="text-xs bg-slate-700 text-sky-300 px-2 py-0.5 rounded-md">{tech}</span>
             ))}
             {project.technologies.length > 4 && <span className="text-xs bg-slate-700 text-sky-300 px-2 py-0.5 rounded-md">...</span>}
@@ -91,7 +91,7 @@ export const Projects: React.FC<ProjectsProps> = ({ projects, onProjectSelect })
       <div ref={sectionRef} className={`transition-all duration-1000 ease-out ${isSectionVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
         <Section id="projects" title="Projects">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            {displayedProjects.map((project, index) => (
+            {displayedProjects.map((project: Project, index: number) => (
               <AnimateOnScroll key={project.id} delayClass={getDelayClass(index)}>
                 <ProjectCard project={project} onSelect={() => onProjectSelect(project)} />
               </AnimateOnScroll>

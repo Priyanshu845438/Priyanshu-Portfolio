@@ -11,6 +11,12 @@ interface GithubStatsProps {
   topLangsUrl: string;
 }
 
+interface StatItemType {
+  src: string;
+  alt: string;
+  title: string;
+}
+
 const StatImage: React.FC<{ src: string; alt: string; href?: string; itemTitle?: string }> = ({ src, alt, href, itemTitle }) => {
   const [hasError, setHasError] = useState(false);
 
@@ -77,7 +83,7 @@ export const GithubStats: React.FC<GithubStatsProps> = ({
     };
   }, []);
 
-  const statsItems = [
+  const statsItems: StatItemType[] = [
     { src: streakUrl, alt: `${githubUsername}'s GitHub Streak Stats`, title: "Contribution Streak" },
     { src: profileDetailsUrl, alt: `${githubUsername}'s GitHub Profile Summary`, title: "Profile Details" },
     { src: overallStatsUrl, alt: `${githubUsername}'s Overall GitHub Stats`, title: "Overall Stats" },
@@ -93,7 +99,7 @@ export const GithubStats: React.FC<GithubStatsProps> = ({
     <div ref={sectionRef} className={`transition-all duration-1000 ease-out ${isSectionVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
       <Section id="github-stats" title="📈 GitHub Statistics">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 px-2">
-          {statsItems.map((item, index) => (
+          {statsItems.map((item: StatItemType, index: number) => (
             <AnimateOnScroll key={item.title} delayClass={getDelayClass(index)}>
               <StatImage 
                 src={item.src} 

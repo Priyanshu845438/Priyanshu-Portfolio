@@ -55,7 +55,7 @@ export const FloatingNav: React.FC<FloatingNavProps> = ({ navItems }) => {
         
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-2">
-          {navItems.map(item => (
+          {navItems.map((item: NavItem) => (
             <a 
               key={item.id} 
               href={`#${item.id}`} 
@@ -84,7 +84,7 @@ export const FloatingNav: React.FC<FloatingNavProps> = ({ navItems }) => {
       {isMobileMenuOpen && (
         <div className="md:hidden mt-2 border-t border-slate-700">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            {navItems.map(item => (
+            {navItems.map((item: NavItem) => (
               <a 
                 key={item.id} 
                 href={`#${item.id}`} 

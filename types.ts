@@ -23,7 +23,7 @@ export interface EducationEntry {
 }
 
 export interface Award {
-  description: string;
+  description:string;
 }
 
 export interface ExperienceEntry {
@@ -72,6 +72,13 @@ export interface ContactProps {
   contactInfo: ContactInfo;
 }
 
+// Updated Position type for Positions of Responsibility
+export interface PositionOfResponsibility {
+  title: string;
+  description: string;
+  appliedSkills: string[];
+}
+
 export interface ResumeData {
   name: string;
   title: string;
@@ -84,7 +91,7 @@ export interface ResumeData {
   professionalExperience: ExperienceEntry[];
   internships: ExperienceEntry[];
   achievements: string[];
-  positionsOfResponsibility: Array<{ title: string; description: string }>;
+  positionsOfResponsibility: PositionOfResponsibility[]; // Updated type
   collegeProjects: Project[];
   personalInterests: string[];
   personalDetails: PersonalDetails; // Kept in ResumeData for potential future use

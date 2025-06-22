@@ -62,7 +62,7 @@ export const Education: React.FC<EducationProps> = ({ education }) => {
     <div ref={sectionRef} className={`transition-all duration-1000 ease-out ${isSectionVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
       <Section id="education" title="Education">
         <div className="relative">
-          {education.map((edu, index) => (
+          {education.map((edu: EducationEntry, index: number) => (
             <AnimateOnScroll key={index} delayClass={getDelayClass(index)}>
               <EducationItem item={edu} />
             </AnimateOnScroll>
