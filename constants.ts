@@ -13,7 +13,7 @@ export const resumeData: ResumeData = {
   tagline: "Aspiring Software Developer & Experienced QA Engineer",
   contact: {
     phone: "+91-6206698170",
-    email: "2303031057078@paruluniversity.ac.in",
+    email: "Priyanshubth6742@gmail.com",
     location: "Vadodra, Gujarat, India - 391760",
     linkedin: "https://www.linkedin.com/in/priyanshu-raj-b0b589203/",
     whatsapp: "https://api.whatsapp.com/send?phone=916206698170",
@@ -119,17 +119,17 @@ export const resumeData: ResumeData = {
   ],
   positionsOfResponsibility: [
     { 
-      title: "Lead QA Strategist", 
+      title: "QA Strategist", 
       description: "Spearheaded comprehensive software quality assurance initiatives, designing and executing manual, compatibility, and foundational automation tests. Drove the adoption of best practices to ensure robust, high-quality software delivery across multiple projects.",
       appliedSkills: ["Manual & Functional Testing", "API Testing (Manual & Automated Strategies)", "Compatibility & Unit Testing", "Analytical Problem-Solving", "Agile Methodologies & Scrum"]
     },
     { 
-      title: "Full-Stack Web Development Lead", 
+      title: "Full-Stack Web Development", 
       description: "Led the development and enhancement of diverse web solutions, leveraging proficiency in HTML, CSS, JavaScript, and PHP for CMS platforms like WordPress and Shopify. Focused on creating responsive, user-centric interfaces and integrating backend functionalities.",
       appliedSkills: ["HTML5, CSS3, Modern JavaScript (ES6+)", "WordPress Development & Customization", "Shopify Theme Development & Store Setup", "ReactJS (Frontend Development)", "Node.js & Express.js (Backend Development)"]
     },
     { 
-      title: "Senior IT Operations & Support Specialist", 
+      title: "IT Operations & Support Specialist", 
       description: "Orchestrated IT support operations, managing technical troubleshooting, resource allocation, and system maintenance. Implemented strategies to enhance IT service delivery and ensure operational efficiency.",
       appliedSkills: ["IT Support & Technical Troubleshooting", "DevOps (Core Concepts & CI/CD Awareness)", "Strategic Time & Resource Management", "Network Troubleshooting", "Effective Communication & Team Collaboration"]
     },
